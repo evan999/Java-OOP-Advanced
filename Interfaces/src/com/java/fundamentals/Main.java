@@ -6,8 +6,11 @@ public class Main {
 		// TODO Auto-generated method stub
 		TaxCalculator2018 calculator = new TaxCalculator2018(100000);
 		TaxReport report = new TaxReport(calculator);
+		report.show();
 		
-		System.out.println("Hello");
+		report.setCalculator(new TaxCalculator2019());
+		report.show();
+		//System.out.println("Hello");
 	}
 	
 	
